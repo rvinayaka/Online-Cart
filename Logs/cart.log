@@ -3397,3 +3397,21 @@ INFO:2023-04-04 16:36:38,849:app:updated: 650.0, percent: 0.35%
 WARNING:2023-04-04 16:36:38,850:app:Hence discount process completed, closing the connection
 WARNING:2023-04-04 16:36:38,850:app:Hence discount process completed, closing the connection
 WARNING:2023-04-04 16:36:38,850:app:Hence discount process completed, closing the connection
+WARNING:2023-04-05 12:39:37,776:app:Starting the db connection to display items in the cart
+INFO:2023-04-05 12:39:38,036:app:Displayed list of all items in the cart
+INFO:2023-04-05 12:39:38,036:app:Displayed list of all items in the cart
+WARNING:2023-04-05 12:39:38,036:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:39:38,036:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:39:38,036:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:45:36,984:app:Starting the db connection for discount
+ERROR:2023-04-05 12:45:37,297:app:Error occurred: tuple index out of range
+ERROR:2023-04-05 12:45:37,297:app:Error occurred: tuple index out of range
+WARNING:2023-04-05 12:45:37,298:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:45:37,298:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:45:37,298:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:46:50,905:app:Starting the db connection for discount
+INFO:2023-04-05 12:46:51,399:app:updated: 640.0, percent: 0.2%
+INFO:2023-04-05 12:46:51,399:app:updated: 640.0, percent: 0.2%
+WARNING:2023-04-05 12:46:51,400:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:46:51,400:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:46:51,400:app:Hence account created, closing the connection
