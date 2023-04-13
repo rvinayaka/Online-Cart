@@ -3415,3 +3415,11 @@ INFO:2023-04-05 12:46:51,399:app:updated: 640.0, percent: 0.2%
 WARNING:2023-04-05 12:46:51,400:app:Hence account created, closing the connection
 WARNING:2023-04-05 12:46:51,400:app:Hence account created, closing the connection
 WARNING:2023-04-05 12:46:51,400:app:Hence account created, closing the connection
+WARNING:2023-04-13 14:34:38,201:app:Starting the db connection to search item in the cart
+INFO:2023-04-13 14:34:38,401:app:Orange is available in the cart
+INFO:2023-04-13 14:34:38,401:app:Orange is available in the cart
+WARNING:2023-04-13 14:34:38,402:settings:Hence account created, closing the connection
+WARNING:2023-04-13 14:36:05,977:app:Starting the db connection to search item in the cart
+INFO:2023-04-13 14:36:06,217:app:Orange is available in the cart
+INFO:2023-04-13 14:36:06,217:app:Orange is available in the cart
+WARNING:2023-04-13 14:36:06,218:settings:Hence account created, closing the connection

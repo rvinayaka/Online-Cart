@@ -236,8 +236,50 @@ def delete_items(sno):
     conn.commit()
 
     # Log the details into logger file
-    logger(__name__).info(f"Account no {sno} deleted from the table")
+    logger(__name__).info(f"Item no {sno} deleted from the cart")
     return jsonify({"message": "Deleted Successfully", "item_no": sno}), 200
+
+
+
+@app.route("/search/<string:item>", methods=["GET"], endpoint='search_items_in_cart')      # DELETE an item from cart
+@handle_exceptions
+def search_items_in_cart(item):
+    # start the database connection
+    cur, conn = connection()
+    logger(__name__).warning("Starting the db connection to search item in the cart")
+
+    query = "SELECT * FROM cart WHERE items = %s"
+    cur.execute(query, (item,))
+    get_item = cur.fetchone()
+
+    if not get_item:
+        # Log the details into logger file
+        logger(__name__).info(f"{item} is not available in the cart")
+        return jsonify({"message": f"{item} not found in the cart"}), 200
+    else:
+        # Log the details into logger file
+        logger(__name__).info(f"{item} is available in the cart")
+        return jsonify({"message": f"{item} found in the cart",
+                        "details": get_item}), 200
+
+@app.route("/empty_cart", methods=["DELETE"], endpoint='empty_cart')      # DELETE all items from cart
+@handle_exceptions
+def empty_the_cart():
+    # start the database connection
+    cur, conn = connection()
+    logger(__name__).warning("Starting the db connection to EMPTY the cart")
+
+    # Execute delete query to remove all the items from the table
+    cur.execute("DELETE FROM cart")
+
+    # Commit the change to this table
+    # conn.commit()
+
+    # Log the details into logger file
+    logger(__name__).info("Emptying the cart successful")
+    return jsonify({"message": "Emptying the cart successful"}), 200
+
+
 
 
 if __name__ == "__main__":
