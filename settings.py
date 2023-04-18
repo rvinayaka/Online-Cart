@@ -1,6 +1,28 @@
 import logging
 import os
 
+import psycopg2
+from flask import jsonify
+
+def connection():
+    cur, conn = None, None
+    try:
+        conn = psycopg2.connect(
+            host="172.16.1.236",
+            port="5432",
+            database="bctst",
+            user="vinayak",
+            password="vinayak"
+        )
+        cur = conn.cursor()
+        print("DB connected")
+        print(cur, conn)
+        return cur, conn
+    except(Exception, psycopg2.Error) as error:
+        print("Failed connection", error)
+        return cur, conn
+
+
 def logger(name):
     # Create logger instance
     logger = logging.getLogger(name)
@@ -25,8 +47,6 @@ def logger(name):
     return logger
 
 
-
-
 def handle_exceptions(func):
     def wrapper(*args, **kwargs):
         try:
@@ -35,10 +55,10 @@ def handle_exceptions(func):
             conn = kwargs.get('conn')
             if conn:
                 conn.rollback()
-            logger(__name__).error(f"Error occurred: {error}")
+            logger(__name__).error(f"Error occurred 1: {error}")
             return jsonify({"message": f"Error occurred: {error}"})
         except Exception as error:
-            logger(__name__).error(f"Error occurred: {error}")
+            logger(__name__).error(f"Error occurred 2: {error}")
             return jsonify({"message": f"Error occurred: {error}"})
         finally:
             conn = kwargs.get("conn")
@@ -48,6 +68,4 @@ def handle_exceptions(func):
                 conn.close()
             if cur:
                 cur.close()
-            logger(__name__).warning("Hence account created, closing the connection")
     return wrapper
-

@@ -3423,3 +3423,769 @@ WARNING:2023-04-13 14:36:05,977:app:Starting the db connection to search item in
 INFO:2023-04-13 14:36:06,217:app:Orange is available in the cart
 INFO:2023-04-13 14:36:06,217:app:Orange is available in the cart
 WARNING:2023-04-13 14:36:06,218:settings:Hence account created, closing the connection
+WARNING:2023-04-18 12:59:27,114:app:Starting the db connection to display items in the cart
+INFO:2023-04-18 12:59:27,255:app:Displayed list of all items in the cart
+INFO:2023-04-18 12:59:27,255:app:Displayed list of all items in the cart
+WARNING:2023-04-18 14:06:33,022:app:Starting the db connection to display items in the cart
+INFO:2023-04-18 14:06:33,146:app:Displayed list of all items in the cart
+INFO:2023-04-18 14:06:33,146:app:Displayed list of all items in the cart
+WARNING:2023-04-18 14:06:33,146:app:Hence list displayed, closing the connection
+WARNING:2023-04-18 14:06:33,146:app:Hence list displayed, closing the connection
+WARNING:2023-04-18 14:06:33,146:app:Hence list displayed, closing the connection
+WARNING:2023-04-18 15:35:18,753:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 15:35:19,022:app:('Apples',) saved for later
+INFO:2023-04-18 15:35:19,022:app:('Apples',) saved for later
+WARNING:2023-04-18 15:35:46,989:app:Starting the db connection to save item in the wishlist 
+WARNING:2023-04-18 15:35:46,989:app:Starting the db connection to save item in the wishlist 
+WARNING:2023-04-18 15:35:46,989:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 15:35:48,082:app:('Apples',) saved for later
+INFO:2023-04-18 15:35:48,082:app:('Apples',) saved for later
+INFO:2023-04-18 15:35:48,082:app:('Apples',) saved for later
+INFO:2023-04-18 15:35:48,082:app:('Apples',) saved for later
+WARNING:2023-04-18 15:36:08,035:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 15:36:08,217:app:(1, 'Apples', 5, Decimal('300'), True, True, None) saved for later
+INFO:2023-04-18 15:36:08,217:app:(1, 'Apples', 5, Decimal('300'), True, True, None) saved for later
+WARNING:2023-04-18 15:38:15,899:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 15:38:16,141:app:(1, 'Apples', 5, Decimal('300'), True, True, None) saved for later
+INFO:2023-04-18 15:38:16,141:app:(1, 'Apples', 5, Decimal('300'), True, True, None) saved for later
+WARNING:2023-04-18 15:46:22,802:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 15:46:23,067:app:Apples saved for later
+INFO:2023-04-18 15:46:23,067:app:Apples saved for later
+WARNING:2023-04-18 16:05:00,358:app:Starting the db connection to display list of items using pagination
+INFO:2023-04-18 16:05:00,530:app:Displayed list of 10 accounts having total of 1 pages
+INFO:2023-04-18 16:05:00,530:app:Displayed list of 10 accounts having total of 1 pages
+WARNING:2023-04-18 16:06:13,795:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:06:13,795:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:06:13,795:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:06:14,023:app:Oranges added in the cart, Status code - 200
+INFO:2023-04-18 16:06:14,023:app:Oranges added in the cart, Status code - 200
+INFO:2023-04-18 16:06:14,023:app:Oranges added in the cart, Status code - 200
+INFO:2023-04-18 16:06:14,023:app:Oranges added in the cart, Status code - 200
+WARNING:2023-04-18 16:06:14,023:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:06:14,023:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:06:14,023:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:06:14,023:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:06:14,023:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:38,286:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:38,286:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:38,286:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:38,286:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:38,286:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:38,286:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:08:38,476:app:Cherry added in the cart, Status code - 200
+INFO:2023-04-18 16:08:38,476:app:Cherry added in the cart, Status code - 200
+INFO:2023-04-18 16:08:38,476:app:Cherry added in the cart, Status code - 200
+INFO:2023-04-18 16:08:38,476:app:Cherry added in the cart, Status code - 200
+INFO:2023-04-18 16:08:38,476:app:Cherry added in the cart, Status code - 200
+INFO:2023-04-18 16:08:38,476:app:Cherry added in the cart, Status code - 200
+INFO:2023-04-18 16:08:38,476:app:Cherry added in the cart, Status code - 200
+WARNING:2023-04-18 16:08:38,476:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:38,476:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:38,476:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:38,476:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:38,476:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:38,476:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:38,476:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:38,476:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,668:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:54,668:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:54,668:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:54,668:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:54,668:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:54,668:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:54,668:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:54,668:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:08:54,668:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+INFO:2023-04-18 16:08:54,827:app:Tomato added in the cart, Status code - 200
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:08:54,828:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:09:51,424:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:09:51,602:app:Carrot added in the cart, Status code - 200
+INFO:2023-04-18 16:09:51,602:app:Carrot added in the cart, Status code - 200
+WARNING:2023-04-18 16:09:51,602:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:09:51,602:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:09:51,602:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:08,655:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:08,655:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:08,655:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:08,655:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:10:08,836:app:Potato added in the cart, Status code - 200
+INFO:2023-04-18 16:10:08,836:app:Potato added in the cart, Status code - 200
+INFO:2023-04-18 16:10:08,836:app:Potato added in the cart, Status code - 200
+INFO:2023-04-18 16:10:08,836:app:Potato added in the cart, Status code - 200
+INFO:2023-04-18 16:10:08,836:app:Potato added in the cart, Status code - 200
+WARNING:2023-04-18 16:10:08,837:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:08,837:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:08,837:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:08,837:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:08,837:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:08,837:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:25,638:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:25,638:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:25,638:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:25,638:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:25,638:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:25,638:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:25,638:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:10:25,823:app:Papaya added in the cart, Status code - 200
+INFO:2023-04-18 16:10:25,823:app:Papaya added in the cart, Status code - 200
+INFO:2023-04-18 16:10:25,823:app:Papaya added in the cart, Status code - 200
+INFO:2023-04-18 16:10:25,823:app:Papaya added in the cart, Status code - 200
+INFO:2023-04-18 16:10:25,823:app:Papaya added in the cart, Status code - 200
+INFO:2023-04-18 16:10:25,823:app:Papaya added in the cart, Status code - 200
+INFO:2023-04-18 16:10:25,823:app:Papaya added in the cart, Status code - 200
+INFO:2023-04-18 16:10:25,823:app:Papaya added in the cart, Status code - 200
+WARNING:2023-04-18 16:10:25,824:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:25,824:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:25,824:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:25,824:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:25,824:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:25,824:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:25,824:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:25,824:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:25,824:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:43,879:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+INFO:2023-04-18 16:10:44,064:app:Pineapple added in the cart, Status code - 200
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:44,065:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:10:57,999:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+INFO:2023-04-18 16:10:58,161:app:Watermelon added in the cart, Status code - 200
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:10:58,162:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:11:47,065:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+INFO:2023-04-18 16:11:47,234:app:Avacado added in the cart, Status code - 200
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:11:47,235:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:04,237:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+INFO:2023-04-18 16:12:04,412:app:Onion added in the cart, Status code - 200
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:04,413:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:28,041:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+INFO:2023-04-18 16:12:28,227:app:Pumpkin added in the cart, Status code - 200
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:28,228:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:12:45,618:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+INFO:2023-04-18 16:12:45,787:app:Apple added in the cart, Status code - 200
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:12:45,788:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:28,319:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+INFO:2023-04-18 16:13:28,482:app:Beetroot added in the cart, Status code - 200
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:28,483:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+WARNING:2023-04-18 16:13:44,615:app:Starting the db connection to add item in the cart
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+INFO:2023-04-18 16:13:44,842:app:Strawberry added in the cart, Status code - 200
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:13:44,843:app:Hence item added, closing the connection
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+WARNING:2023-04-18 16:15:51,119:app:Starting the db connection to display list of items using pagination
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+INFO:2023-04-18 16:15:51,294:app:Displayed list of 10 accounts having total of 2 pages
+WARNING:2023-04-18 17:33:15,110:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 17:33:15,323:app:Orange saved for later
+INFO:2023-04-18 17:33:15,323:app:Orange saved for later
+WARNING:2023-04-18 17:33:57,005:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 17:33:57,269:app:Tomato saved for later
+INFO:2023-04-18 17:33:57,269:app:Tomato saved for later
+WARNING:2023-04-18 17:34:02,849:app:Starting the db connection to save item in the wishlist 
+WARNING:2023-04-18 17:34:02,849:app:Starting the db connection to save item in the wishlist 
+WARNING:2023-04-18 17:34:02,849:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 17:34:03,228:app:Pineapple saved for later
+INFO:2023-04-18 17:34:03,228:app:Pineapple saved for later
+INFO:2023-04-18 17:34:03,228:app:Pineapple saved for later
+INFO:2023-04-18 17:34:03,228:app:Pineapple saved for later
+WARNING:2023-04-18 17:34:06,775:app:Starting the db connection to save item in the wishlist 
+WARNING:2023-04-18 17:34:06,775:app:Starting the db connection to save item in the wishlist 
+WARNING:2023-04-18 17:34:06,775:app:Starting the db connection to save item in the wishlist 
+WARNING:2023-04-18 17:34:06,775:app:Starting the db connection to save item in the wishlist 
+WARNING:2023-04-18 17:34:06,775:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 17:34:07,063:app:Apple saved for later
+INFO:2023-04-18 17:34:07,063:app:Apple saved for later
+INFO:2023-04-18 17:34:07,063:app:Apple saved for later
+INFO:2023-04-18 17:34:07,063:app:Apple saved for later
+INFO:2023-04-18 17:34:07,063:app:Apple saved for later
+INFO:2023-04-18 17:34:07,063:app:Apple saved for later
+WARNING:2023-04-18 17:36:39,949:app:Starting the db connection to update the details 
+WARNING:2023-04-18 17:36:39,949:app:Starting the db connection to update the details 
+WARNING:2023-04-18 17:36:39,949:app:Starting the db connection to update the details 
+WARNING:2023-04-18 17:36:39,949:app:Starting the db connection to update the details 
+WARNING:2023-04-18 17:36:39,949:app:Starting the db connection to update the details 
+WARNING:2023-04-18 17:36:39,949:app:Starting the db connection to update the details 
+WARNING:2023-04-18 17:36:39,949:app:Starting the db connection to update the details 
+INFO:2023-04-18 17:36:40,189:app:Item updated: {'item': 'Pomegranate', 'quantity': 5, 'price': 120}
+INFO:2023-04-18 17:36:40,189:app:Item updated: {'item': 'Pomegranate', 'quantity': 5, 'price': 120}
+INFO:2023-04-18 17:36:40,189:app:Item updated: {'item': 'Pomegranate', 'quantity': 5, 'price': 120}
+INFO:2023-04-18 17:36:40,189:app:Item updated: {'item': 'Pomegranate', 'quantity': 5, 'price': 120}
+INFO:2023-04-18 17:36:40,189:app:Item updated: {'item': 'Pomegranate', 'quantity': 5, 'price': 120}
+INFO:2023-04-18 17:36:40,189:app:Item updated: {'item': 'Pomegranate', 'quantity': 5, 'price': 120}
+INFO:2023-04-18 17:36:40,189:app:Item updated: {'item': 'Pomegranate', 'quantity': 5, 'price': 120}
+INFO:2023-04-18 17:36:40,189:app:Item updated: {'item': 'Pomegranate', 'quantity': 5, 'price': 120}
+WARNING:2023-04-18 17:41:51,950:app:Starting the db connection to save item in the wishlist 
+INFO:2023-04-18 17:41:52,546:app:(5, 'Pomegranate', 5, Decimal('100'), None, None, None) saved for later
+INFO:2023-04-18 17:41:52,546:app:(5, 'Pomegranate', 5, Decimal('100'), None, None, None) saved for later

@@ -1,7 +1,7 @@
-from flask import Flask, request, jsonify
-from conn import connection
-from settings import logger, handle_exceptions
-import psycopg2
+from flask import Flask, request, jsonify, make_response
+from settings import connection, logger, handle_exceptions
+
+# Creating Flask instance
 app = Flask(__name__)
 
 
@@ -53,12 +53,14 @@ def add_to_cart():
 
     # commit to database
     conn.commit()
-    logger(__name__).info(f"{items} added in the cart")
+    response = make_response(jsonify({"message": f"{items} added to the cart"}), 200)
+
+    logger(__name__).info(f"{items} added in the cart, Status code - {response.status_code}")
 
     # close the database connection
     logger(__name__).warning("Hence item added, closing the connection")
 
-    return jsonify({"message": "Item added to the cart"}), 200
+    return response
 
 
 @app.route("/", methods=["GET"], endpoint='show_cart')            # READ the cart list
@@ -66,15 +68,32 @@ def add_to_cart():
 def show_cart():
     # start the database connection
     cur, conn = connection()
-    logger(__name__).warning("Starting the db connection to display items in the cart")
+    logger(__name__).warning("Starting the db connection to display items in the cart using pagination")
 
-    show_query = "SELECT * FROM cart;"
-    cur.execute(show_query)
+    # Get page number from the user -> page
+    page = request.args.get('page', 1, type=int)
+
+    # how many records to show per page i.e (LIMIT) -> per_page
+    per_page = request.args.get('perPage', 5, type=int)
+
+
+    # Fetch all the user accounts in the table
+    cur.execute("SELECT COUNT(*) FROM cart")
+    total_accounts = cur.fetchone()[0]
+
+    # Calculate the total number of pages
+    total_pages = int(total_accounts / per_page) + (total_accounts % per_page > 0)
+
+    # Retrieve the records for the current page i.e (OFFSET)
+    offset = (page - 1) * per_page  # Calculate the offset for the current page
+    cur.execute('SELECT * FROM cart LIMIT %s OFFSET %s', (per_page, offset))
     data = cur.fetchall()
-    # Log the details into logger file
-    logger(__name__).info("Displayed list of all items in the cart")
 
-    return jsonify({"message": data}), 200
+    # Log the details into logger file
+    logger(__name__).info(f"Displayed list of {per_page} accounts having total of {total_pages} pages")
+    return jsonify({"message": f"Displayed list of {per_page} accounts having total of {total_pages} pages",
+                    "details": data}), 200
+
 
 
 @app.route("/cart/<int:sno>", methods=["PUT"], endpoint='update_item_details')
@@ -125,46 +144,81 @@ def checkout():
 
 @app.route("/cart/save_for_later/<int:sno>", methods=["PUT"], endpoint='item_saved_later')
 @handle_exceptions
-def item_saved_later(sno):
-    # start the database connection
-    cur, conn = connection()
-    logger(__name__).warning("Starting the db connection to save item for later ")
-
-    cur.execute("SELECT items from CART WHERE sno = %s", (sno,))
-    get_item = cur.fetchone()
-
-    if not get_item:
-        return jsonify({"message": "Item not found"}), 200
-
-    query = "UPDATE cart SET save_for_later = TRUE WHERE sno = %s"
-    cur.execute(query, (sno,))
-
-    conn.commit()
-    # Log the details into logger file
-    logger(__name__).info(f"{get_item} saved for later")
-    return jsonify({"message": f"{get_item} saved for later"}), 200
-
-
-@app.route("/cart/wishlist/<int:sno>", methods=["PUT"], endpoint='wishlist_item')
-@handle_exceptions
-def wishlist_item(sno):
+def item_saved_for_later(sno):
     # start the database connection
     cur, conn = connection()
     logger(__name__).warning("Starting the db connection to save item in the wishlist ")
 
-    cur.execute("SELECT items from CART WHERE sno = %s", (sno,))
+    # Get item details from the cart with mentioned serial number
+    cur.execute("SELECT * from CART WHERE sno = %s", (sno,))
     get_item = cur.fetchone()
+    print(get_item)
 
+    # If not present then return not found message
     if not get_item:
         return jsonify({"message": "Item not found"}), 200
 
-    query = "UPDATE cart SET wishlist = TRUE WHERE sno = %s"
-    cur.execute(query, (sno,))
+    # If found then unpack all the values from the fetched data
+    item_id = get_item[0]
+    items = get_item[1]
+    quantity = get_item[2]
+    price = get_item[3]
+
+    # Initially show that item is in the wishlist
+    # Update that item as true in the wishlist column
+    update_query = "UPDATE cart SET save_for_later = TRUE WHERE sno = %s"
+    cur.execute(update_query, (sno,))
+
+    # Then insert the values into the wishlist table
+    insert_query = """INSERT INTO saved_later(item_id, items, quantity, price) VALUES (%s, %s, %s, %s);"""
+    insert_values = (item_id, items, quantity, price)
+
+    cur.execute(insert_query, insert_values)
 
     conn.commit()
     # Log the details into logger file
     logger(__name__).info(f"{get_item} saved for later")
     return jsonify({"message": f"{get_item} saved for later"}), 200
+
+
+@app.route("/cart/wishlist/<int:sno>", methods=["POST"], endpoint='wishlist_item')
+@handle_exceptions
+def adding_to_wishlist(sno):
+    # start the database connection
+    cur, conn = connection()
+    logger(__name__).warning("Starting the db connection to save item in the wishlist ")
+
+    # Get item details from the cart with mentioned serial number
+    cur.execute("SELECT * from CART WHERE sno = %s", (sno,))
+    get_item = cur.fetchone()
+    print(get_item)
+
+    # If not present then return not found message
+    if not get_item:
+        return jsonify({"message": "Item not found"}), 200
+
+    # If found then unpack all the values from the values
+    item_id = get_item[0]
+    items = get_item[1]
+    quantity = get_item[2]
+    price = get_item[3]
+
+    # Initially show that item is in the wishlist
+    # Update that item as true in the wishlist column
+    update_query = "UPDATE cart SET wishlist = TRUE WHERE sno = %s"
+    cur.execute(update_query, (sno,))
+
+    # Then insert the values into the wishlist table
+    insert_query = """INSERT INTO wishlist(item_id, items, quantity, price) VALUES (%s, %s, %s, %s);"""
+    insert_values = (item_id, items, quantity, price)
+
+    cur.execute(insert_query, insert_values)
+
+    # Commit the changes in the both tables
+    conn.commit()
+    # Log the details into logger file
+    logger(__name__).info(f"{items} saved for later")
+    return jsonify({"message": f"{items} saved in wishlist", "details": get_item}), 200
 
 @app.route("/cart/discount/<int:sno>", methods=["PUT"], endpoint='get_discount')
 @handle_exceptions
@@ -224,7 +278,7 @@ def get_discount(sno):
 
 
 
-@app.route("/delete/<int:sno>", methods=["GET", "DELETE"], endpoint='delete_items')      # DELETE an item from cart
+@app.route("/delete/<int:sno>", methods=["DELETE"], endpoint='delete_items')      # DELETE an item from cart
 @handle_exceptions
 def delete_items(sno):
     # start the database connection
@@ -238,7 +292,6 @@ def delete_items(sno):
     # Log the details into logger file
     logger(__name__).info(f"Item no {sno} deleted from the cart")
     return jsonify({"message": "Deleted Successfully", "item_no": sno}), 200
-
 
 
 @app.route("/search/<string:item>", methods=["GET"], endpoint='search_items_in_cart')      # DELETE an item from cart
@@ -279,6 +332,40 @@ def empty_the_cart():
     logger(__name__).info("Emptying the cart successful")
     return jsonify({"message": "Emptying the cart successful"}), 200
 
+
+@app.route("/pagination", methods=["GET"], endpoint='usage_of_pagination')
+@handle_exceptions
+def usage_of_pagination():
+    # start the database connection
+    cur, conn = connection()
+    logger(__name__).warning("Starting the db connection to display list of items using pagination")
+
+    # Get page number from the user
+    page = request.args.get('page', 1, type=int)
+    """page = argument
+        1 = default value
+        type = type of value"""
+
+    # how many records to show per page i.e (LIMIT)
+    per_page = request.args.get('page', 1, type=int)
+
+    # Fetch all the user accounts in the table
+    cur.execute("SELECT COUNT(*) FROM cart")
+    total_items = cur.fetchone()[0]
+
+    # Calculate the total number of pages
+    total_pages = int(total_items / per_page) + (total_items % per_page > 0)
+
+    # Retrieve the records for the current page i.e (OFFSET)
+    offset = (page - 1) * per_page      # Calculate the offset for the current page
+    cur.execute('SELECT * FROM cart LIMIT %s OFFSET %s', (per_page, offset))
+    data = cur.fetchall()
+
+    # Log the details into logger file
+    logger(__name__).info(f"Displayed list of {total_items} accounts having total of {total_pages} pages")
+
+    return jsonify({"message": f"Displayed list of {total_items} accounts having total of {total_pages} pages",
+                    "details": data}), 200
 
 
 
