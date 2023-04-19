@@ -24,13 +24,16 @@ app = Flask(__name__)
 
 
 
-@app.route("/add", methods=["POST"])             # CREATE an item
+"""Admin API"""
+# CREATE an item
+@app.route("/add", methods=["POST"])
 @handle_exceptions
 def add_to_cart():
     # start the database connection
     cur, conn = connection()
     logger(__name__).warning("Starting the db connection to add item in the cart")
 
+    # Get values from the user
     items = request.json["items"]
     quantity = request.json["quantity"]
     price = request.json["price"]
@@ -55,14 +58,15 @@ def add_to_cart():
     conn.commit()
     response = make_response(jsonify({"message": f"{items} added to the cart"}), 200)
 
+    # Log the details saved in table
     logger(__name__).info(f"{items} added in the cart, Status code - {response.status_code}")
 
     # close the database connection
     logger(__name__).warning("Hence item added, closing the connection")
-
     return response
 
 
+"""Functional API"""
 @app.route("/", methods=["GET"], endpoint='show_cart')            # READ the cart list
 @handle_exceptions
 def show_cart():
@@ -91,11 +95,14 @@ def show_cart():
 
     # Log the details into logger file
     logger(__name__).info(f"Displayed list of {per_page} accounts having total of {total_pages} pages")
+
+    # close the database connection
+    logger(__name__).debug("Hence all items showed, closing the connection")
     return jsonify({"message": f"Displayed list of {per_page} accounts having total of {total_pages} pages",
                     "details": data}), 200
 
 
-
+"""Admin API"""
 @app.route("/cart/<int:sno>", methods=["PUT"], endpoint='update_item_details')
 @handle_exceptions
 def update_item_details(sno):
@@ -105,13 +112,17 @@ def update_item_details(sno):
     cur.execute("SELECT items from cart where sno = %s", (sno,))
     get_item = cur.fetchone()
 
+    # If item not found then return the message not found
     if not get_item:
         return jsonify({"message": "Item not found"}), 200
+
+    # Get values from the user to update
     data = request.get_json()
     items = data.get('items')
     quantity = data.get('quantity')
     price = data.get('price')
 
+    # Check what values has been given then update with query
     if items:
         cur.execute("UPDATE cart SET items = %s WHERE sno = %s", (items, sno))
     elif quantity:
@@ -119,12 +130,18 @@ def update_item_details(sno):
     elif price:
         cur.execute("UPDATE cart SET price = %s WHERE sno = %s", (price, sno))
 
+    # Commit the change in table
     conn.commit()
 
     # Log the details into logger file
     logger(__name__).info(f"Item updated: {data}")
+
+    # close the database connection
+    logger(__name__).warning("Hence item updated, closing the connection")
     return jsonify({"message": "Item updated", "Details": data}), 200
 
+
+"""Functional API"""
 @app.route("/cart/checkout", methods=["GET"], endpoint='checkout')    # Calculate the total price
 @handle_exceptions
 def checkout():
@@ -140,8 +157,13 @@ def checkout():
 
     # Log the details into logger file
     logger(__name__).info(f"Total calculated {total_price}")
+
+    # close the database connection
+    logger(__name__).warning("Hence checkout done, closing the connection")
     return jsonify({"message": "Total calculated", "total": total_price}), 200
 
+
+"""Admin API"""
 @app.route("/cart/save_for_later/<int:sno>", methods=["PUT"], endpoint='item_saved_later')
 @handle_exceptions
 def item_saved_for_later(sno):
@@ -150,9 +172,9 @@ def item_saved_for_later(sno):
     logger(__name__).warning("Starting the db connection to save item in the wishlist ")
 
     # Get item details from the cart with mentioned serial number
-    cur.execute("SELECT * from CART WHERE sno = %s", (sno,))
+    cur.execute("SELECT sno, items, quantity, price from CART WHERE sno = %s", (sno,))
     get_item = cur.fetchone()
-    print(get_item)
+    print("get_item", get_item, type(get_item))
 
     # If not present then return not found message
     if not get_item:
@@ -163,6 +185,7 @@ def item_saved_for_later(sno):
     items = get_item[1]
     quantity = get_item[2]
     price = get_item[3]
+    print(item_id, items, quantity, price)
 
     # Initially show that item is in the wishlist
     # Update that item as true in the wishlist column
@@ -178,9 +201,13 @@ def item_saved_for_later(sno):
     conn.commit()
     # Log the details into logger file
     logger(__name__).info(f"{get_item} saved for later")
+
+    # close the database connection
+    logger(__name__).warning("Hence item saved for later, closing the connection")
     return jsonify({"message": f"{get_item} saved for later"}), 200
 
 
+"""Admin API"""
 @app.route("/cart/wishlist/<int:sno>", methods=["POST"], endpoint='wishlist_item')
 @handle_exceptions
 def adding_to_wishlist(sno):
@@ -189,7 +216,7 @@ def adding_to_wishlist(sno):
     logger(__name__).warning("Starting the db connection to save item in the wishlist ")
 
     # Get item details from the cart with mentioned serial number
-    cur.execute("SELECT * from CART WHERE sno = %s", (sno,))
+    cur.execute("SELECT sno, items, quantity, price from CART WHERE sno = %s", (sno,))
     get_item = cur.fetchone()
     print(get_item)
 
@@ -217,9 +244,14 @@ def adding_to_wishlist(sno):
     # Commit the changes in the both tables
     conn.commit()
     # Log the details into logger file
-    logger(__name__).info(f"{items} saved for later")
+    logger(__name__).info(f"{items} saved in wishlist")
+
+    # close the database connection
+    logger(__name__).warning("Hence item saved in wishlist, closing the connection")
     return jsonify({"message": f"{items} saved in wishlist", "details": get_item}), 200
 
+
+"""Admin API"""
 @app.route("/cart/discount/<int:sno>", methods=["PUT"], endpoint='get_discount')
 @handle_exceptions
 def get_discount(sno):
@@ -274,10 +306,13 @@ def get_discount(sno):
 
     # Log the details into logger file
     logger(__name__).info(f"updated: {updated_amount}, percent: {check_percent}%")
+
+    # close the database connection
+    logger(__name__).warning("Hence discount process done, closing the connection")
     return jsonify({"message": f"{updated_amount} final price after discount of {check_percent}%"}), 200
 
 
-
+"""Admin API"""
 @app.route("/delete/<int:sno>", methods=["DELETE"], endpoint='delete_items')      # DELETE an item from cart
 @handle_exceptions
 def delete_items(sno):
@@ -291,9 +326,13 @@ def delete_items(sno):
 
     # Log the details into logger file
     logger(__name__).info(f"Item no {sno} deleted from the cart")
+
+    # close the database connection
+    logger(__name__).warning("Hence item deleted, closing the connection")
     return jsonify({"message": "Deleted Successfully", "item_no": sno}), 200
 
 
+"""Functional API"""
 @app.route("/search/<string:item>", methods=["GET"], endpoint='search_items_in_cart')      # DELETE an item from cart
 @handle_exceptions
 def search_items_in_cart(item):
@@ -308,13 +347,21 @@ def search_items_in_cart(item):
     if not get_item:
         # Log the details into logger file
         logger(__name__).info(f"{item} is not available in the cart")
+
+        # close the database connection
+        logger(__name__).warning("Hence searching process done, closing the connection")
         return jsonify({"message": f"{item} not found in the cart"}), 200
     else:
         # Log the details into logger file
         logger(__name__).info(f"{item} is available in the cart")
+
+        # close the database connection
+        logger(__name__).warning("Hence searching process done, closing the connection")
         return jsonify({"message": f"{item} found in the cart",
                         "details": get_item}), 200
 
+
+"""Admin API"""
 @app.route("/empty_cart", methods=["DELETE"], endpoint='empty_cart')      # DELETE all items from cart
 @handle_exceptions
 def empty_the_cart():
@@ -330,9 +377,13 @@ def empty_the_cart():
 
     # Log the details into logger file
     logger(__name__).info("Emptying the cart successful")
+
+    # close the database connection
+    logger(__name__).warning("Hence cart cleaned, closing the connection")
     return jsonify({"message": "Emptying the cart successful"}), 200
 
 
+"""Functional API"""
 @app.route("/pagination", methods=["GET"], endpoint='usage_of_pagination')
 @handle_exceptions
 def usage_of_pagination():
@@ -364,6 +415,8 @@ def usage_of_pagination():
     # Log the details into logger file
     logger(__name__).info(f"Displayed list of {total_items} accounts having total of {total_pages} pages")
 
+    # close the database connection
+    logger(__name__).warning("Hence pagination process done, closing the connection")
     return jsonify({"message": f"Displayed list of {total_items} accounts having total of {total_pages} pages",
                     "details": data}), 200
 

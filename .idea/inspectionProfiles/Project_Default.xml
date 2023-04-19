@@ -3,7 +3,7 @@
     <option name="myName" value="Project Default" />
     <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <Languages>
-        <language minSize="150" name="Python" />
+        <language minSize="158" name="Python" />
       </Languages>
     </inspection_tool>
     <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
@@ -11,6 +11,10 @@
         <list>
           <option value="E302" />
           <option value="E303" />
+          <option value="E305" />
+          <option value="E501" />
+          <option value="E114" />
+          <option value="E116" />
         </list>
       </option>
     </inspection_tool>
@@ -18,6 +22,17 @@
       <option name="ignoredNames">
         <list>
           <option value="type" />
+          <option value="id" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="dict.coupon_code" />
+          <option value="dict.*" />
+          <option value="str.strptime" />
+          <option value="Bams.requirements.psycopg2" />
         </list>
       </option>
     </inspection_tool>
